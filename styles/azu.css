@@ -138,3 +138,52 @@ h2{
   color: #00ffea;
 }
 
+
+@media (max-width: 768px) {
+  body {
+    height: auto;
+    overflow: auto;
+  }
+
+  .container {
+    height: auto;
+    min-height: 100vh;
+  }
+
+  .left-sidebar {
+    width: 100%;
+    height: auto;
+    min-height: 100vh;
+    padding: 80px 20px 40px;
+    text-align: center;
+    background: rgba(10, 12, 30, 0.75);
+  }
+
+  h1 {
+    font-size: 3.5rem;
+  }
+
+  h2 {
+    font-size: 1.2rem;
+  }
+
+  #clock {
+    font-size: 2rem;
+  }
+
+  .social-links {
+    margin-top: 2rem;
+  }
+
+  .projects {
+    margin-top: 2rem;
+  }
+
+  .projects h3 {
+    font-size: 1.5rem;
+  }
+
+  .projects .project p {
+    font-size: 1rem;
+  }
+}
