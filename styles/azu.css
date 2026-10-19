@@ -1,0 +1,140 @@
+@font-face {
+    font-family: e1234;
+    src: url(../assets/fonts/e1234/E1234.ttf);
+}
+
+:root {
+  --twilight-gradient: linear-gradient(to right,  rgba(19,244,211,1) 0%,rgba(237,128,217,1) 52%,rgba(255,187,17,1) 100%);
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0;
+  height: 100vh;
+  overflow: hidden;
+}
+
+
+h1 {
+    display: inline-block;
+    color: transparent;
+    background: var(--twilight-gradient);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+
+#clock {
+    font-family: "e1234";
+    font-size: 3rem;
+    top: 10px;
+    right: 10px;
+    position: fixed;
+    color: transparent;
+    background: var(--twilight-gradient);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.container {
+  display: flex;
+  height: 100%;
+  background: #1a1a2e url(../assets/images/night.jpg) center / cover no-repeat;
+}
+
+
+.left-sidebar {
+  width: 45%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(to right, rgba(10, 12, 30, 0.85), rgba(10, 12, 30, 0.35));
+  backdrop-filter: blur(1px);
+  color: #fff;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+
+h1{
+  color: #fff;
+  margin: 0;
+}
+
+p {
+  color: #fff;
+}
+
+
+h1{
+  font-size: 5rem;
+  color: #fff;
+  z-index: 10;
+  mix-blend-mode: screen;
+  text-shadow: 0 0 5px #00acac5a, 
+               0 0 10px #00acac49, 
+               0 0 15px #00acac40;
+               
+}
+
+h2{
+  color: #cecece;
+  z-index: 10;
+}
+
+.social-links {
+  margin-top: 5rem;
+
+    a {
+      display: inline-block;
+      margin: 0 10px; 
+      width: 40px;
+      height: 40px;
+    }
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
+}
+
+.projects {
+  margin-top: 3rem;
+  text-align: center;
+
+  h3 {
+    color: #fff;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+
+  .project {
+    margin: 1rem 0;
+
+    p {
+      color: #cecece;
+      margin: 0.5rem 0;
+      font-size: 1.2rem;
+    }
+  }
+}
+
+.project-link {
+  display: inline-block;
+  color: #00acac;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.project-link:hover {
+  color: #00ffea;
+}
+
